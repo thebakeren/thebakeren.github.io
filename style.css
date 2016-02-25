@@ -1,14 +1,11 @@
 
 body{
-    margin: 0;
+    margin: 0px;
     background-color:floralwhite; 
      font-weight:lighter;
 
-	   font-family:'Segoe MDL2 Assets';
-       padding-left:5px;
-       padding-right:5px;
-       padding-top: 5px;
-       padding-bottom: 5px;
+	   font-family:Ebrima;
+
 }
 
 
@@ -30,6 +27,9 @@ li.one{
 
     float: right;
     font-size: 13px;
+
+
+
     list-style-type: none;
 
 }
@@ -40,7 +40,38 @@ li.two{
     float: right;
     font-size: 13px;
     list-style-type: none;
+
 }
+li.three{
+ width: 600px;
+
+
+
+
+
+}
+li.four{
+    width: 20px;
+
+
+
+
+}
+li.five{
+    width: 230px;
+
+
+
+
+}
+li.six{
+    width: 230px;
+
+
+
+
+}
+
 
 li a{
     display: block;
@@ -126,13 +157,144 @@ p.eight {
     
     
     
-    
+
 }
 
 
+p.eleven {
 
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: Ebrima;
+    text-align: center;
+    background-color: mediumaquamarine;
+    width: 230px;
+
+    display: block;
+
+
+
+
+
+}
+
+fieldset{
+    background-color: skyblue;
+    display: block;
+}
+
+.rating {
+    float:left;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    /* width:1em;*/
+
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:1em;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+p.twelve {
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: Ebrima;
+    text-align: center;
+    background-color: mediumaquamarine;
+    width: 400px;
+
+
+
+
+
+
+}
+
+
+p.nine {
+
+
+
+   /* font-family:Ebrima;*/
+
+float: right;
+    width: 220px;
+    font-size: 1em;
+
+
+    padding-right: 50px;
+
+
+
+
+
+
+
+
+
+}
+p.facts{
+    font-size: 0.7em;
+    text-align: center;
+    width: 120px;
+
+}
+span{
+    width: 300px;
+}
+span.Left{
+    padding-right: 140px;
+    padding-left: 30px;
+    padding-bottom: 280px;
+    float: left;
+
+}
 article {
-    font-size: 1.2em;
+    font-size: 1.0em;
     padding-top:10px;
     display: inline;
     
@@ -156,6 +318,11 @@ img{
  float: right;
     width: 722px;
     height: 357px;
+    
+
+
+
+
 
 
 }
@@ -202,33 +369,12 @@ footer{
 	 background-color: antiquewhite;
 	 font-size: 1em;
 	 text-align: center;
-	 height:20px;
-     padding-left:280px; 
-	 padding-right:280px;
-	 padding-top: 30px;
-	 padding-bottom: 30px;
+    padding-top: 30px;
+	 height:50px;
+
 	 
 	display: block;
 	
 	
 }
 
-footer.three{
-	
-    
-	margin-top: 55px;
-	
-	
-	 background-color: antiquewhite;
-	 font-size: 1em;
-	 text-align: center;
-	 height:20px;
-     padding-left:280px; 
-	 padding-right:280px;
-	 padding-top: 30px;
-	 padding-bottom: 30px;
-	 
-	display: block;
-	
-	
-}
