@@ -1,5 +1,5 @@
 <!Doctype html>
-<html>
+<html class="no-js">
 <head>
     
      
@@ -16,13 +16,45 @@
 
  <link rel="stylesheet" type="text/css" href="style.css">
    <script type="text/javascript" src="potion.js"></script>
+    <script src="jquery-1.12.1.min.js"></script>
 
-   
+
+
+
+    <style>
+        /* This only works with JavaScript,
+           if it's not present, don't show loader */
+        .no-js #loader { display: none;  }
+        .js #loader { display: block; position: absolute; left: 100px; top: 0; width: auto;height: auto }
+    </style>
+
+
+    
+
+
+    <script>
+        // Wait for window load
+        $(window).load(function() {
+            // Animate loader off screen
+            $("#loader").animate({
+                top: -200
+            }, 150);
+        });
+
+    </script>
 </head>
 
 <body>
 
-     <h1 class="one">
+
+
+<img style="width: 50px; height: 50px"  src="loading.gif" id="loader">
+<img style="width: 40px; height: 40px"  src="loading.gif" >
+
+
+
+
+<h1 class="one">
 		
 		 
 		 <b>
@@ -51,7 +83,8 @@
 
 
      </ul>
-     <img src="tyre-dye-cake.jpg" alt="The Baker"/>
+
+<img src="tyre-dye-cake.jpg">
      <div id="background2" >
 
 
@@ -70,44 +103,46 @@
 
                  </p>
 
-                 <fieldset class="rating">
-                     <legend>Rating</legend>
-                     <input type="radio" name="rating"  id ="star5" value="5">
-                     <label for="star5" title="Legend"></label>
-                     <input type="radio" id="star4" name="rating" value="4">
-                     <label for="star4" title="Great"></label>
-                     <input type="radio" id ="star3"  name="rating" value="3">
-                     <label for="star3" title="Wonderful"></label>
-                     <input type="radio" id="star2" name="rating" value="2">
-                     <label for="star2" title="Power"></label>
-                     <input type="radio" id="star1" name="rating" value="1">
-                     <label for="star1" title="Main brain"></label>
 
-
-                 </fieldset>
 
 
                  </article>
 
 
              <br>
-             <br>
 
          </main>
 
+         <fieldset class="rating">
+             <legend>Rating</legend>
+             <input type="radio" name="rating"  id ="star5" value="5">
+             <label for="star5" title="Legend"></label>
+             <input type="radio" id="star4" name="rating" value="4">
+             <label for="star4" title="Great"></label>
+             <input type="radio" id ="star3"  name="rating" value="3">
+             <label for="star3" title="Wonderful"></label>
+             <input type="radio" id="star2" name="rating" value="2">
+             <label for="star2" title="Power"></label>
+             <input type="radio" id="star1" name="rating" value="1">
+             <label for="star1" title="Main brain"></label>
+
+
+         </fieldset>
 
 
          <h5>
              Nutritional Facts
 
-
          </h5>
 
+
          <p class="facts">
+
              . 1 cupcake equals 235 calories,
              <br>
              . 9g fat (3g saturated fat),
              <br>
+
              . 0 cholesterol, 258 mg sodium,
              <br>
              . 38g carbohydrate, 0 fiber, 1g protein.
@@ -165,7 +200,31 @@
 
          </span>
 
+         <div id="result">
 
+         </div>
+
+         <script>
+
+             $(document).ready(function(){
+                 $("input").click(function(){
+                     $("#div1").fadeIn();
+                     $("#div2").fadeIn("slow");
+                     $("#div3").fadeIn(3000);
+                 });
+             });
+
+         </script>
+
+       <h1 style="font-size: 4em ;color: snow;" >
+         <div id="div1" style="text-align: center;  width:80px;height:80px;display:none;background-color:green;float: left">
+             <span   id="slider5" >1 </span>P</div>
+         <div id="div2" style="text-align: center;width:80px;height:80px;display:none;background-color:brown;float: left"></span>D </div>
+         <div id="div3" style="text-align: center;width:80px;height:80px;display:none;background-color:blue;float: left"> </span>C </div></h1>
+         <br>
+         <br>
+         <br>
+         <br>
           <span>
                 <h3 class="ing"> Editor's Note</h3>
              In this recipe, lemon-lime soda is used in place of the water,
