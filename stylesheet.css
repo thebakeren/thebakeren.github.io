@@ -1,0 +1,229 @@
+body{
+
+    background-color: floralwhite;
+    font-family: "Sitka Small" ;
+
+    margin: auto;
+
+
+
+}
+
+div.backgroundImage{
+
+    background : url("restaurant_icons.png") repeat;
+ padding-bottom: 600px;
+
+
+}
+
+.logo{
+    
+    width: 50px;
+    height: 50px;
+}
+
+.companyName{
+    color: gray;
+    font-family: "Sitka Banner";
+
+}
+
+
+
+ul.navigate{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px ;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+li a{
+    float: left;
+}
+
+li a{
+
+ display: block;
+    color: white;
+    text-decoration: none;
+    font-family: "Sitka Banner" ;
+    text-align: center;
+    padding: 22px 22px;
+
+
+
+
+
+
+}
+a:hover{
+    background-color: gold;
+
+}
+a.active{
+    background-color: crimson;
+}
+
+.backgroundImage{
+
+}
+
+
+
+.cake{
+    width: 1148px;
+
+
+}
+.cake2{
+
+    width: 378px;
+    height: 200px;
+
+
+}
+
+.cake3{
+
+    width: 1145px;
+    height: 400px;
+
+
+}
+.tail{
+
+    background-color: mediumaquamarine;
+    padding-bottom:50px ;
+
+
+
+}
+
+.tail1{
+
+    background-color: mediumaquamarine;
+
+    float: left;
+
+
+
+}
+
+
+
+.fields{
+    width:205px ;
+    height:100px ;
+    background-color: white;
+}
+
+
+.rate_widget {
+    border:     1px solid #CCC;
+    overflow:   visible;
+    padding:    10px;
+    position:   relative;
+    width:      180px;
+    height:     32px;
+}
+.ratings_stars {
+    background: url('star_empty.png') no-repeat;
+    float:      left;
+    height:     28px;
+    padding:    2px;
+    width:      32px;
+}
+.ratings_vote {
+    background: url('star_full.png') no-repeat;
+}
+.ratings_over {
+    background: url('star_highlight.png') no-repeat;
+}
+.total_votes {
+    background: deepskyblue;
+    top: 58px;
+    left: 0;
+    padding: 5px;
+    position:   absolute;
+}
+.movie_choice {
+    font: 10px verdana, sans-serif;
+    background-color: white;
+    padding-right: 28px;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    margin: 0 20px 40px auto;
+
+    width: 180px;
+    float: left;
+}
+
+.ranger{
+    float: right;
+    padding-right:78px ;
+}
+
+.lit{
+    float: left;
+
+}
+.peepTalk{
+ float: left;
+    width: 300px;
+    padding-left:20px ;
+    padding-right:29px ;
+
+}
+
+.dir{
+    text-indent: 41px ;
+}
+h1 {
+    text-align: center;
+    width: 400px;
+    margin: 20px auto;
+}
+p.title{
+    text-indent: 29px;
+    color: darksalmon;
+
+
+
+}
+p.title2{
+    text-indent: 29px;
+    color: darksalmon;
+
+
+
+
+
+}
+
+p.art1{
+    font-size: 1.5em;
+    padding-top: 10px;
+    text-align: center;
+}
+p.art2{
+    font-size: 1.5em;
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+
+.foot{
+    padding: 20px;
+    background-color: crimson;
+    border-top:solid ;
+    border-top-color: skyblue;
+
+}
+p.footLabel{
+    text-align: center;
+    color: white;
+}
