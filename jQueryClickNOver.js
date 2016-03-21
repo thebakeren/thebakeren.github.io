@@ -28,7 +28,7 @@ $(document).ready(function(){
 
 
 
-        $(".rating a").dblclick(function(){
+        $(".rating a").mouseenter(function(){
             $(this).css({"backgroundImage":"url(star_empty.png)"}
 
 
